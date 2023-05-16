@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 0-main """
+""" 1-main """
 from models.base import Base
 
 if __name__ == "__main__":
@@ -18,12 +18,3 @@ if __name__ == "__main__":
 
     b5 = Base()
     print(b5.id)
-
-    b6 = Base(-100)
-    print(b6.id)
-
-    b7 = Base('inf')
-    print(b7.id)
-
-    b8 = Base('NaN')
-    print(b8.id)
