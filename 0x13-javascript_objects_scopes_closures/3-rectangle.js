@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 module.exports = class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
@@ -7,9 +6,10 @@ module.exports = class Rectangle {
       this.height = h;
     }
   }
-  print () {
-    for (let col = 0; col < this.height; col += 1) {
-      console.log('X'.repeat(this.width));
+
+  print (c = 'X') {
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
     }
   }
 };
